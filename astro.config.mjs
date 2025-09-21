@@ -6,14 +6,17 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Sim Racing Open Guides',
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/anzax/sim-racing-open-guides' },
+			],
 			sidebar: [
 				{
 					label: 'Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Triple Monitor Blueprint', slug: 'guides/triple-monitor-basics' },
+						{ label: 'COMING SOON: Ultrawide Playbooks', slug: 'guides/ultrawide-playbooks', badge: 'planned' },
+						{ label: 'COMING SOON: VR Transition Notes', slug: 'guides/vr-transition', badge: 'planned' },
 					],
 				},
 				{

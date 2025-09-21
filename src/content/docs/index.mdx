@@ -1,36 +1,79 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Sim Racing Open Guides
+description: Sim rig setups, screen guides, game settings, and more.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Sim rig setups, screen guides, game settings, and more.
   image:
-    file: ../../assets/houston.webp
+    html: |
+      <div style="display:flex;flex-direction:column;gap:1rem;padding:1.75rem;border-radius:1.5rem;background:linear-gradient(135deg,#4f46e5 0%,#9333ea 45%,#ec4899 100%);color:#ffffff;box-shadow:0 1.5rem 3rem rgba(36,34,58,0.28);width:100%;min-height:100%;">
+        <h3 style="margin:0;font-size:1.15rem;font-weight:700;letter-spacing:0.01em;">Dialed-in immersion starts here</h3>
+        <ul style="margin:0;padding:0;list-style:none;display:grid;gap:0.35rem;font-size:0.95rem;">
+          <li>- Quick-start measurements for single, ultrawide, and triple layouts</li>
+          <li>- FOV calculators, camera presets, and post-processing baselines</li>
+          <li>- Community-built rig profiles, upgrade paths, and DIY accessories</li>
+        </ul>
+        <p style="margin:0;font-size:0.85rem;opacity:0.85;">Have data to share? Jump into the backlog, clone a template, and open a PR.</p>
+      </div>
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Triple Monitor Blueprint
+      link: /guides/triple-monitor-basics/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Contribution Backlog
+      link: https://github.com/anzax/sim-racing-open-guides/discussions
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## Start here
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Sim Racing Screens 101" icon="compass">
+    Learn correct FOV math, decide between single, ultrawide, or triple layouts,
+    and understand panel tech trade-offs.
+  </Card>
+  <Card title="Share game configs" icon="add-document">
+    Drop your graphics presets, post-processing tweaks, and camera settings so
+    others can match your lap-ready visuals.
+  </Card>
+  <Card title="Share your builds" icon="rocket">
+    Profile your cockpit, wheelbase, pedals, seat, and DIY accessories with
+    photos and sourcing notes.
+  </Card>
+  <Card title="Join the community" icon="chat">
+    Use GitHub Discussions to request new topics, compare driver versions, or
+    coordinate test sessions.
+  </Card>
 </CardGrid>
+
+## Sim Racing Screens 101
+
+- **Correct FOV:** Step-by-step measurement workflows and calculators for each sim.
+- **Display choices:** When to stay single-screen, upgrade to ultrawide, or commit to triples.
+- **Panel tech:** VA vs. IPS vs. OLED pros and cons, response time tuning, and HDR calibration.
+- **Ergonomics:** Eye-to-screen distance, monitor angles, and seat positioning cues.
+
+## Share game configs
+
+- Post your per-title resolution and FOV tables.
+- Note DLSS/FSR presets, sharpening filters, and weather visibility tweaks.
+- Include driver versions, motion blur preferences, and HUD scale tips for readability.
+
+## Share your builds
+
+- Document cockpit frames, wheelbases, pedals, shifters, and handbrakes.
+- Capture seats, harnesses, tactile setups, and DIY accessories like button boxes or dash mounts.
+- Link to galleries, CAD files, and sourcing spreadsheets to help others replicate your rig.
+
+## What this hub covers
+
+- **Screen setups:** geometry, mounting hardware, calibration, and troubleshooting.
+- **Sim rig builds:** cockpit selection, hardware integration, and upgrade paths.
+- **Setup & configuration:** graphics tuning, telemetry overlays, and comfort adjustments.
+- **Tips & community wisdom:** workflow checklists, maintenance reminders, and shared learnings.
+
+## How to help
+
+Pick an open task from the contribution backlog, or create a Markdown draft under `src/content/docs/guides/` using the templates provided. New to Starlight? The [official docs](https://starlight.astro.build) explain layouts, shortcodes, and deployment tips.

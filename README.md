@@ -1,49 +1,62 @@
-# Starlight Starter Kit: Basics
+# Sim Racing Open Guides
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-pnpm create astro@latest -- --template starlight
-```
+Open, community-driven documentation for sim racing screen setups. The guides focus on building immersive triple-monitor rigs, dialing in correct field of view (FOV), and tuning in-game display settings across popular racing titles.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This site is built with [Astro Starlight](https://starlight.astro.build) so enthusiasts can contribute new knowledge quickly while enjoying a clean docs experience.
 
-## 🚀 Project Structure
+## Why this exists
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+- Collect proven best practices for triples, ultrawides, and VR transition planning.
+- Share repeatable workflows for angle and distance measurements that deliver accurate FOV.
+- Catalog per-game graphics and post-processing settings with community-tested baselines.
+- Provide upgrade paths—from entry-level mounts to pro-grade cockpits—backed by real user feedback.
+
+## Project structure
 
 ```
 .
-├── public/
+├── public/                  # Global static assets
 ├── src/
-│   ├── assets/
+│   ├── assets/              # Images and media embedded in guides
 │   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+│   │   └── docs/            # Markdown/MDX docs grouped by section
+│   └── content.config.ts    # Content collections definition
+├── astro.config.mjs         # Astro + Starlight configuration
+├── package.json             # Scripts and dependencies
+└── tsconfig.json            # TypeScript settings
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Key entry points:
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+- `src/content/docs/index.mdx` drives the homepage hero and quick links.
+- `src/content/docs/guides/` houses long-form how-to content.
+- `src/content/docs/reference/` is reserved for specs, measurement tables, and glossary material.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## Getting started
 
-## 🧞 Commands
+```bash
+pnpm install
+pnpm dev
+```
 
-All commands are run from the root of the project, from a terminal:
+The dev server defaults to `http://localhost:4321`. Use `pnpm build` to generate production assets in `dist/`, and `pnpm preview` to run the built site locally. Astro CLI commands remain available under `pnpm astro <command>`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## Contributing
 
-## 👀 Want to learn more?
+Contributions are always welcome—from correcting measurements to sharing full build write-ups. Start by reading [`CONTRIBUTING.md`](./CONTRIBUTING.md) for style, review, and PR guidance. If you have ideas for new sections or want to report issues, open a GitHub discussion or issue.
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## Roadmap
+
+- Expand coverage beyond screens to include rig ergonomics and motion platforms.
+- Publish vendor-neutral buying guides with community-maintained price monitoring.
+- Add interactive calculators for FOV, monitor angles, and seating distance.
+
+## Community & Support
+
+- GitHub Issues: track bugs, request features, or claim tasks.
+- GitHub Discussions: share builds, ask questions, and swap telemetry charts.
+- Astro Discord: connect with other Starlight maintainers for tooling help.
+
+Thanks for helping fellow racers chase immersion!
