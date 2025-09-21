@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://anzax.github.io/sim-racing-open-guides',
+	base: '/sim-racing-open-guides/',
 	integrations: [
 		starlight({
 			title: 'Sim Racing Open Guides',
